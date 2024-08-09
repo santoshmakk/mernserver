@@ -33,7 +33,7 @@ app.use(logRequest);
 // Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI)
 .then(() => console.log('MongoDB connected'))
-.catch(err => console.log(err));
+.catch(err => console.log(err)); 
 
 // Routes
 app.use('/api/auth', require('./routes/auth'));
